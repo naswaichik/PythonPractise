@@ -1,0 +1,105 @@
+import math
+
+def calculate_expression(option):
+    if option == 1:
+        x = float(input("Введите значение x: "))
+        y = float(input("Введите значение y: "))
+        b = (x - y) / x
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"b = {b}")
+        print(f"Целая часть b: {int(b)}")
+    elif option == 2:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        t = float(input("Введите значение t: "))
+        x = b * math.atan(t) - a
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"t = {t}")
+        print(f"x = {x}")
+        print(f"Целая часть x: {int(x)}")
+    elif option == 3:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = (b * 2) * math.sin((x - a) / x) + x * 3
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"Целая часть y: {int(y)}")
+    elif option == 4:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = math.cos((a * b + x * 2) / (x * 3))
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"Целая часть y: {int(y)}")
+    elif option == 5:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = (1 / (x * 2)) * math.sin((x * 2) + b - x + a)
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"Целая часть y: {int(y)}")
+    elif option == 6:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = math.cos(x * b) * a + (x * b) * 3
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"Целая часть y: {int(y)}")
+    elif option == 7:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = x + a - (b / (x * 3 * math.sin(x)))
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"Целая часть y: {int(y)}")
+    elif option == 8:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = (1 / math.cos(x)) + ((a + b) / (a * b * x * (x * 2))) - (x * 2)
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"Целая часть y: {int(y)}")
+    elif option == 9:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = (b * 2) * math.sin((x - a) / x) + x * 3
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y}")
+        print(f"Целая часть y: {int(y)}")
+    elif option == 10:
+        a = float(input("Введите значение a: "))
+        b = float(input("Введите значение b: "))
+        x = float(input("Введите значение x: "))
+        y = math.cos((a * b + x * 2) / (x * 3))
+        print(f"a = {a}")
+        print(f"b = {b}")
+        print(f"x = {x}")
+        print(f"y = {y }")
+        print(f"Целая часть y: {int(y)}")
+
+option = int(input("Введите номер варианта (1-10): "))
+calculate_expression(option)
+
